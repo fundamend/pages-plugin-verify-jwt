@@ -7,7 +7,7 @@ export const onRequest = async ({ request, next, env }) => {
 
 	const publicKey =
 		'-----BEGIN PUBLIC KEY-----\n' +
-		env.CLERK_JWT_VERIFICATION_KEY.match(/.{1,64}/g).join('\n') +
+		env.JWT_VERIFICATION_KEY.match(/.{1,64}/g).join('\n') +
 		'\n-----END PUBLIC KEY-----';
 
 	let isValid = false;
