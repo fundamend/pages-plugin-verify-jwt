@@ -5,6 +5,7 @@ export const onRequest = async ({ request, next, env }) => {
 	const cookies = parse(request.headers.get('Cookie') || '');
 	const sessionToken = cookies['__session'];
 
+	// TODO: Make this more generic
 	const publicKey =
 		'-----BEGIN PUBLIC KEY-----\n' +
 		env.JWT_VERIFICATION_KEY.match(/.{1,64}/g).join('\n') +
@@ -12,6 +13,7 @@ export const onRequest = async ({ request, next, env }) => {
 
 	let isValid = false;
 
+	// TODO: Make algorithm a parameter
 	if (sessionToken) {
 		isValid = await jwt.verify(sessionToken, publicKey, { algorithm: 'RS256' });
 	}
