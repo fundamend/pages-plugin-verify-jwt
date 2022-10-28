@@ -4,11 +4,15 @@
 	"dependencies": {
     "@tsndr/cloudflare-worker-jwt": "^2.1.2"
   },
-	"license": "MIT",
-  "main": "build/index.js",
-  "files": [
+	"files": [
     "build/index.js"
   ],
+	"license": "MIT",
+  "main": "build/index.js",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
   "scripts": {
     "build": "npx wrangler pages functions build --plugin --outfile=build/index.js",
 		"clean": "rimraf build *.log",
