@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/fundamend/fundamend/compare/@fundamend/pages-plugin-verify-jwt@0.0.6...@fundamend/pages-plugin-verify-jwt@0.0.7) (2022-10-28)
+
+
+### Bug Fixes
+
+* remove prebuilt function and add back prepare script ([87e65d3](https://github.com/fundamend/fundamend/commit/87e65d3425861849753de2dc7544ff47402dd232))
+
 ### [0.0.6](https://github.com/fundamend/fundamend/compare/@fundamend/pages-plugin-verify-jwt@0.0.5...@fundamend/pages-plugin-verify-jwt@0.0.6) (2022-10-28)
 
 
