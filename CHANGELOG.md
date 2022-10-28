@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/fundamend/fundamend/compare/@fundamend/pages-plugin-verify-jwt@0.0.2...@fundamend/pages-plugin-verify-jwt@0.0.3) (2022-10-28)
+
+
+### Bug Fixes
+
+* add missing cookie dependency ([6357541](https://github.com/fundamend/fundamend/commit/63575416f7dff9fa595c38232ca94a3bfeac67f4))
+
 ### [0.0.2](https://github.com/fundamend/fundamend/compare/@fundamend/pages-plugin-verify-jwt@0.0.1...@fundamend/pages-plugin-verify-jwt@0.0.2) (2022-10-28)
 
 
