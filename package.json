@@ -42,7 +42,8 @@
 				"lint:md": "remark . --ignore-path .gitignore",
 				"lint:md:fix": "remark . --ignore-path .gitignore --output",
 				"precommit": "lint-staged",
-				"release:prepare": "yarn build && cross-env-shell \"standard-version -t $npm_package_name@\""
+				"prepare": "npm run build",
+				"release:prepare": "cross-env-shell \"standard-version -t $npm_package_name@\""
 		},
 		"type": "module"
 }
