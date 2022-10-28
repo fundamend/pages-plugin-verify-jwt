@@ -1,32 +1,32 @@
 {
-  "name": "@fundamend/pages-plugin-verify-jwt",
-  "version": "0.0.0",
-	"dependencies": {
-    "@tsndr/cloudflare-worker-jwt": "^2.1.2"
-  },
-	"files": [
-    "build/index.js"
-  ],
-	"license": "MIT",
-  "main": "build/index.js",
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org"
-	},
-  "scripts": {
-    "build": "npx wrangler pages functions build --plugin --outfile=build/index.js",
-		"clean": "rimraf build *.log",
-		"clean:all": "yarn clean && rimraf node_modules",
-		"lint": "yarn lint:js && yarn lint:md && yarn lint:formatting",
-		"lint:fix": "yarn lint:js:fix && yarn lint:md:fix && yarn lint:formatting:fix",
-		"lint:formatting": "prettier **/*.* --check",
-		"lint:formatting:fix": "prettier **/*.* --write",
-		"lint:js": "eslint . --ext .js,.cjs",
-		"lint:js:fix": "eslint . --ext .js,.cjs --fix",
-		"lint:md": "remark . --ignore-path .gitignore",
-		"lint:md:fix": "remark . --ignore-path .gitignore --output",
-		"precommit": "lint-staged",
-		"release:prepare": "cross-env-shell \"standard-version -t $npm_package_name@\""
-  },
-	"type": "module"
+		"name": "@fundamend/pages-plugin-verify-jwt",
+		"version": "0.0.1",
+		"dependencies": {
+				"@tsndr/cloudflare-worker-jwt": "^2.1.2"
+		},
+		"files": [
+				"build/index.js"
+		],
+		"license": "MIT",
+		"main": "build/index.js",
+		"publishConfig": {
+				"access": "public",
+				"registry": "https://registry.npmjs.org"
+		},
+		"scripts": {
+				"build": "npx wrangler pages functions build --plugin --outfile=build/index.js",
+				"clean": "rimraf build *.log",
+				"clean:all": "yarn clean && rimraf node_modules",
+				"lint": "yarn lint:js && yarn lint:md && yarn lint:formatting",
+				"lint:fix": "yarn lint:js:fix && yarn lint:md:fix && yarn lint:formatting:fix",
+				"lint:formatting": "prettier **/*.* --check",
+				"lint:formatting:fix": "prettier **/*.* --write",
+				"lint:js": "eslint . --ext .js,.cjs",
+				"lint:js:fix": "eslint . --ext .js,.cjs --fix",
+				"lint:md": "remark . --ignore-path .gitignore",
+				"lint:md:fix": "remark . --ignore-path .gitignore --output",
+				"precommit": "lint-staged",
+				"release:prepare": "cross-env-shell \"standard-version -t $npm_package_name@\""
+		},
+		"type": "module"
 }
