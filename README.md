@@ -18,7 +18,7 @@ Use your favorite Node.js package manager, for example [npm], like so:
 Add a `_middleware.js` file where you want to verify JWTs, import _pages-plugin-verify-jwt_ and call it on a request, like so:
 
 ```js
-import verifyJWTPlugin from "@fundamend/pages-plugin-verify-jwt";
+import verifyJWTPlugin from '@fundamend/pages-plugin-verify-jwt';
 
 export const onRequest = verifyJWTPlugin();
 ```
