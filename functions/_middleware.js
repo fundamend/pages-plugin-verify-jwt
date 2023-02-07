@@ -8,7 +8,7 @@ export const onRequest = async ({ request, next, env }) => {
 	// TODO: Make this more generic
 	const publicKey =
 		'-----BEGIN PUBLIC KEY-----\n' +
-		env.JWT_VERIFICATION_KEY.match(/.{1,64}/g).join('\n') +
+		env.PUBLIC_CLERK_JWT_VERIFICATION_KEY.match(/.{1,64}/g).join('\n') +
 		'\n-----END PUBLIC KEY-----';
 
 	let isValid = false;
